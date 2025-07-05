@@ -196,16 +196,10 @@
     <!-- <a href="{{ url('/user/profile') }}">Profile</a> -->
     </div>
     <div class="nav-right">
-  @if (session('token'))
-    <form action="{{ url('/logout') }}" method="POST" style="display: inline;">
-      @csrf
-      <button type="submit" style="background: white; color: #1565C0; padding: 8px 18px; border-radius: 12px; font-weight: 600; border: none; cursor: pointer;">Logout</button>
-    </form>
-  @else
-    <a href="{{ url('/register') }}">Register</a>
-    <a href="{{ url('/login') }}">Login</a>
-  @endif
+  <a href="/register">Register</a>
+  <a href="/login">Login</a>
 </div>
+
 
   </nav>
 
